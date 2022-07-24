@@ -1,0 +1,25 @@
+.footergrid{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+}
+
+.footersection1 {
+    grid-area: 1 / 1 / 4 / 2;
+    background-color: aqua;
+    display: inline-block;
+}
+
+.footersection2 {
+    grid-area: 1 / 2 / 4 / 3;
+    background-color: red;
+    display: inline;
+}
+
+.footersection3 {
+    grid-area: 1 / 3 / 4 / 4;
+    background-color: azure;
+    display: inline;
+}
