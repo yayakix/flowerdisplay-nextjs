@@ -1,9 +1,11 @@
 import Link from "next/link";
+import headerStyles from '../styles/Header.module.css'
 
 export default function Header() {
   return (
-    <div>
-      <ul>
+    <div className={headerStyles.headergrid}>
+      <h1 className={headerStyles.logocontainer}>Logo name here</h1>
+      <ul className={headerStyles.navlinkscontainer}>
         <li>
           <Link href="/">Home</Link>
         </li>
