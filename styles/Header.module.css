@@ -23,8 +23,13 @@
   display: flex;
 justify-content: center;
 justify-content: space-around;
+align-items: center;
 }
 .navlinkscontainer li{
   display: inline;
+
+}
+.navlinkscontainer li:hover{
+  text-decoration: underline;
 
 }

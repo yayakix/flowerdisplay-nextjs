@@ -1,5 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import { useRouter } from "next/router";
+import flowerStyle from '../../styles/Flower.module.css'
 
 
 export async function getServerSideProps(context) {
@@ -22,15 +23,11 @@ export default function singleFlower(props) {
     const singleflower = props.singleflower
      
   return (
-    <div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+    <div className={flowerStyle.flowerpage}>
+  
       <h1> single flower section</h1>
       {singleflower.name}
-      <br/>
+      <br />
       {singleflower.description}
     </div>
   );
