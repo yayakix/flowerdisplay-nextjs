@@ -17,11 +17,14 @@ export default function Flowers(props) {
      
   return (
     <div className={flowersStyles.flowerspage}>
-      <img
-        className={flowersStyles.img}
-        src="https://images.pexels.com/photos/985266/pexels-photo-985266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        alt="banner"
-      />
+      <div className={flowersStyles.imgcontainer}>
+        <img
+          className={flowersStyles.img}
+          src="https://images.pexels.com/photos/548389/pexels-photo-548389.jpeg"
+          alt="banner"
+        />
+      </div>
+
       <div className={flowersStyles.bannertext}>
         {" "}
         <h1>All Flowers</h1>

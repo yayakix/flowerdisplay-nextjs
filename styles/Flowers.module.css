@@ -1,21 +1,24 @@
 .flowerspage{
-    height: 80vh;
+    height: 100vh;
     padding: 130px 0px;
     display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
+border-top: 3px solid black ;
+}
+.imgcontainer{
+ grid-area: 1 / 2 / 2 / 3;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 .img{
-    object-fit: contain;
-    height: 50%;
-    position: absolute;
-    right: 0;
-    display: flex;
-    justify-content: left;
-     grid-area: 1 / 2 / 2 / 3;
-background: radial-gradient(transparent 20%, white 70%);
+max-width: 520px;
+    
+     
+
     }
 .bannertext{
     grid-area: 1 / 1 / 2 / 2;
